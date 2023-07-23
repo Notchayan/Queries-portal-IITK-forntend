@@ -1,0 +1,129 @@
+body {
+  padding-top: 90px; 
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(40, 44, 52, 0.9), rgba(40, 44, 52, 0.1));
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.headerLogo {
+  width: 70px;
+  height: 70px;
+  padding-right: 8px;
+}
+
+.headerTitle {
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.headerSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 0 20px;
+}
+
+.searchForm {
+  display: flex;
+  width: 70%;
+}
+
+.searchInput {
+  padding: 8px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-radius: 5px 0 0 5px;
+  color: #000;
+}
+
+.searchInput:focus {
+  background: #71767b;
+  color: #fff;
+  outline: none; /* Added to remove blue border */
+}
+
+.searchButton {
+  float: left;
+  width: 20%;
+  padding: 8px;
+  background: #800000;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+  background: #ffffff;
+  color: #800000;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.headerButton {
+  background-color: #800000;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.headerButton:hover {
+  background-color: #ffffff;
+  color: #800000;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .headerContent {
+    flex-direction: column;
+  }
+
+  .headerButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

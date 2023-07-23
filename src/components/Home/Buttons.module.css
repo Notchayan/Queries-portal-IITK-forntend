@@ -1,0 +1,49 @@
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* evenly distribute buttons */
+    width: 150px;
+    height: 300px;
+    padding: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    left: 10px;
+    top: 22.5%;
+    background-color: #888888; /* add a background color */
+    border-radius: 10px; /* round the corners */
+  }
+  
+  .button {
+    display: flex; /* make the button a flex container */
+    align-items: center; /* align items vertically */
+    background-color: #888888; /* same as .buttons background color */
+    border: none;
+    color: #ffffff; /* text color */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    border-radius: 5px; /* round the corners of the buttons */
+  }
+  
+  .button img {
+    width: 20px; /* adjust as needed */
+    height: 20px; /* adjust as needed */
+    margin-right: 10px; /* space between the image and the text */
+  }
+  
+  .button:hover {
+    background-color: #800000; /* change color on hover */
+    color: #ffffff; /* keep text color white */
+  }
+
+  .buttonActive {
+    background-color: #800000; /* active button color */
+    color: #ffffff; /* active button text color */
+  }
+  
+  .buttonActive:hover {
+    background-color: #800000; /* keep the same color on hover */
+    color: #ffffff; /* keep text color white */
+  }
